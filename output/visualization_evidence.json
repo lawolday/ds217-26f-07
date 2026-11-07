@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "The title says the center-based program caused better attendance but the chart cannot prove that.",
+      "repair": "Change the title to Attendance by program and quarter."
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The y-axis starts at 76 instead of 0. This makes small differences look much bigger.",
+      "repair": "Start the y-axis at 0."
+    },
+    {
+      "category": "missing unit",
+      "problem": "The y-axis does not show that attendance is measured in percent.",
+      "repair": "Label the y-axis Attendance (%)."
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "The two programs use different colors but the chart should also be easy to read without color.",
+      "repair": "Use different hatch patterns for each program."
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The thick grid lines and heavy bar outlines make the chart harder to read.",
+      "repair": "Remove the extra decoration and use lighter grid lines."
+    }
+  ],
+  "question": "How does meeting the weekly exercise goal change across four visits for each program?",
+  "audience": "The program coordinator will use this chart to decide where patients need more support.",
+  "intended_claim": "The chart shows how the percent of patients meeting the exercise goal changes over four visits in each program.",
+  "y_measure": "Patients meeting the weekly exercise goal (%)",
+  "grain": "One row and one point show one program at one follow-up visit.",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "This line chart shows the percent of patients meeting their weekly exercise goal in the Home-based and Center-based programs. The x-axis shows follow-up visits 1 to 4 and the y-axis shows the percent of patients meeting the goal. Home-based increased from 58% at visit 1 to 70% at visit 4. Center-based increased from 57% to 79%. At visit 4 the Center-based program was 9 percentage points higher than Home-based. Patients chose their own program so this does not prove that one program caused better results. Each percentage only includes patients seen at that visit with about 45 patients per program. The difference could also be due to chance or which patients returned."
+}
